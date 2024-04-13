@@ -1,3 +1,4 @@
 .dockerignore
 Dockerfile
 .github
+README.md
