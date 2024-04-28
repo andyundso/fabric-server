@@ -7,7 +7,7 @@ Based on [this](https://gitlab.com/cmunroe/docker-bukkit) more generic approach 
 ## Running the server
 
 ```shell
-docker run -it -v ./data:/data -p 25565:25565  -e EULA=true --name mc_server ghcr.io/andyundso/fabric-server:1.20.4
+docker run -it -v ./data:/data -p 25565:25565  -e EULA=true --name mc_server ghcr.io/andyundso/fabric-server:1.20.5
 ```
 
 ## Configuration
@@ -15,7 +15,7 @@ docker run -it -v ./data:/data -p 25565:25565  -e EULA=true --name mc_server ghc
 You can bring your existing data and configuration and mount it to the `/data` directory when starting the container using the `-v` option. You may also pass configuration options as environment variables like so:
 
 ```shell
-docker run -e DIFFICULTY=2 -e MOTD="A non-standard message" -e SPAWN_ANIMALS=false ghcr.io/andyundso/fabric-server:1.20.4
+docker run -e DIFFICULTY=2 -e MOTD="A non-standard message" -e SPAWN_ANIMALS=false ghcr.io/andyundso/fabric-server:1.20.5
 ```
 
 This container will only attempt to generate a `server.properties` file if one does not already exist. If you would like to use the configuration tool, ensure you are not providing a configuration file or setting `FORCE_CONFIG=true` in the environment variables.
