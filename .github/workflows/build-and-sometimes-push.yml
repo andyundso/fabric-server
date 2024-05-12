@@ -7,7 +7,7 @@ on:
   pull_request:
 
 env:
-  MINECRAFT_VERSION: 1.20.5
+  MINECRAFT_VERSION: 1.20.6
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
 

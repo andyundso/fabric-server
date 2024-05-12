@@ -11,7 +11,7 @@ HEALTHCHECK --interval=1m --timeout=10s \
 RUN mkdir -p /opt/minecraft
 ADD configure.sh entrypoint.sh LICENSE /opt/minecraft/
 
-ENV MINECRAFT_VERSION=1.20.5
+ENV MINECRAFT_VERSION=1.20.6
 ENV FABRIC_LOADER_VERSION=0.15.10
 ENV INSTALLER_VERSION=1.0.1
 
