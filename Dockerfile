@@ -11,8 +11,8 @@ HEALTHCHECK --interval=1m --timeout=10s \
 RUN mkdir -p /opt/minecraft
 ADD configure.sh entrypoint.sh LICENSE /opt/minecraft/
 
-ENV MINECRAFT_VERSION=26.1
-ENV FABRIC_LOADER_VERSION=0.18.5
+ENV MINECRAFT_VERSION=26.1.1
+ENV FABRIC_LOADER_VERSION=0.18.6
 ENV INSTALLER_VERSION=1.1.1
 
 RUN wget "https://meta.fabricmc.net/v2/versions/loader/$MINECRAFT_VERSION/$FABRIC_LOADER_VERSION/$INSTALLER_VERSION/server/jar" -O /opt/minecraft/fabric.jar
